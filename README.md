@@ -57,7 +57,22 @@ It implements:
 
 These images help illustrate the workflow and the results of the pipeline:
 
-- ![Qdrant running](screenshots/qdrant-running.png) — Qdrant running locally after Docker startup
-- ![Generated data](screenshots/generated-data.png) — The generated legal documents and chunk data produced by the generation script
-- ![Architecture](screenshots/architecture.png) — High-level architecture of the two-stage retrieval pipeline
-- ![Benchmark output](screenshots/benchmark-output.png) — Example benchmark or query output showing the retrieval flow
+<br>
+
+**Qdrant running locally**  
+![Qdrant running](screenshots/qdrant-running.png)
+
+<br><br>
+
+**Generated legal data and chunks**  
+![Generated data](screenshots/generated-data.png)
+
+<br><br>
+
+**Architecture of the two-stage pipeline**  
+![Architecture](screenshots/architecture.png)
+
+<br><br>
+
+**Benchmark output**  
+![Benchmark output](screenshots/benchmark-output.png)

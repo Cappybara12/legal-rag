@@ -31,11 +31,38 @@ It implements:
    ```bash
    pip install -r requirements.txt
    ```
-3. Ingest documents:
+3. Start Qdrant locally (required before ingestion):
+   ```bash
+   docker run -p 6333:6333 -p 6334:6334 -v "$(pwd)/qdrant_storage:/qdrant/storage" qdrant/qdrant
+   ```
+   If you prefer to run it in the background, add `-d` and a container name, for example:
+   ```bash
+   docker run -d --name qdrant -p 6333:6333 -p 6334:6334 -v "$(pwd)/qdrant_storage:/qdrant/storage" qdrant/qdrant
+   ```
+4. Generate the synthetic legal documents and chunk data:
+   ```bash
+   python3 data/generate_documents.py
+   ```
+   This creates the chunk file used by the ingest step.
+5. Ingest documents:
    ```bash
    python3 src/ingest.py
    ```
-4. Run benchmarks:
+6. Run benchmarks:
    ```bash
    python3 src/benchmark.py
    ```
+
+## Screenshots
+
+A few relevant screenshots would make the workflow much easier to follow. I suggest adding 2–3 images in these spots:
+
+- Qdrant running locally after Docker startup
+- The generated document/chunk output after running the data generation script
+- The benchmark or query output showing the two-stage retrieval flow
+
+When you share the images, place them in the `screenshots/` folder and update the placeholders below:
+
+- ![Qdrant running](screenshots/qdrant-running.png)
+- ![Generated data](screenshots/generated-data.png)
+- ![Benchmark output](screenshots/benchmark-output.png)

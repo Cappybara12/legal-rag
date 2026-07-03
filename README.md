@@ -70,9 +70,9 @@ These images help illustrate the workflow and the results of the pipeline:
 <br><br>
 
 **Architecture of the two-stage pipeline**  
-![Architecture](screenshots/architecture.png)
+![Architecture](screenshots/benchmark-output.png)
 
 <br><br>
 
 **Benchmark output**  
-![Benchmark output](screenshots/benchmark-output.png)
+![Benchmark output](screenshots/architecture.png)

@@ -43,7 +43,7 @@ It implements:
    ```bash
    python3 data/generate_documents.py
    ```
-   This creates the chunk file used by the ingest step.
+   Running this command creates the dataset files used by the pipeline, including the generated chunk data in `data/chunks.json`. Those files are what the ingest step reads next.
 5. Ingest documents:
    ```bash
    python3 src/ingest.py
@@ -55,14 +55,9 @@ It implements:
 
 ## Screenshots
 
-A few relevant screenshots would make the workflow much easier to follow. I suggest adding 2–3 images in these spots:
+These images help illustrate the workflow and the results of the pipeline:
 
-- Qdrant running locally after Docker startup
-- The generated document/chunk output after running the data generation script
-- The benchmark or query output showing the two-stage retrieval flow
-
-When you share the images, place them in the `screenshots/` folder and update the placeholders below:
-
-- ![Qdrant running](screenshots/qdrant-running.png)
-- ![Generated data](screenshots/generated-data.png)
-- ![Benchmark output](screenshots/benchmark-output.png)
+- ![Qdrant running](screenshots/qdrant-running.png) — Qdrant running locally after Docker startup
+- ![Generated data](screenshots/generated-data.png) — The generated legal documents and chunk data produced by the generation script
+- ![Architecture](screenshots/architecture.png) — High-level architecture of the two-stage retrieval pipeline
+- ![Benchmark output](screenshots/benchmark-output.png) — Example benchmark or query output showing the retrieval flow

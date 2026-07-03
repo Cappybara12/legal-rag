@@ -59,23 +59,23 @@ These images help illustrate the workflow and the results of the pipeline:
 
 <br>
 
-###Qdrant running locally 
+##Qdrant running locally 
 ![Qdrant running](screenshots/qdrant-running.png)
 
 <br><br>
 
 
-###Generated legal data and chunks  
+##Generated legal data and chunks  
 ![Generated data](screenshots/generated-data.png)
 
 <br><br>
 
 
-###Architecture of the two-stage pipeline  
+##Architecture of the two-stage pipeline  
 ![Architecture](screenshots/benchmark-output.png)
 
 <br><br>
 
 
-###Benchmark output
+##Benchmark output
 ![Benchmark output](screenshots/architecture.png)
